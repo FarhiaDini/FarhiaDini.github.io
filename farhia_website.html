@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Farhia Dini | Lecturer, Researcher & Women’s Economic Empowerment Leader</title>
+  <meta name="description" content="Official academic and professional website of Farhia Dini — Lecturer, Researcher, and Head of Career Development & Women's Economic Empowerment at SIMAD iLab, SIMAD University." />
+  <style>
+    :root {
+      --bg: #f7f9fc;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --primary: #0f766e;
+      --primary-dark: #0b5e57;
+      --accent: #dbeafe;
+      --line: #e5e7eb;
+      --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      --max: 1120px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .container {
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    header {
+      background: linear-gradient(135deg, #ecfeff 0%, #eff6ff 100%);
+      border-bottom: 1px solid var(--line);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(10px);
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 0;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      font-size: 0.95rem;
+    }
+
+    .hero {
+      padding: 72px 0 48px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 0.9fr;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #e6fffb;
+      color: var(--primary-dark);
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 4vw, 3.5rem);
+      line-height: 1.15;
+      margin: 0 0 18px;
+    }
+
+    .lead {
+      font-size: 1.08rem;
+      color: var(--muted);
+      max-width: 760px;
+      margin-bottom: 24px;
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 12px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 12px;
+      font-weight: 700;
+      border: 1px solid transparent;
+      box-shadow: var(--shadow);
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      text-decoration: none;
+    }
+
+    .btn-secondary {
+      background: white;
+      color: var(--text);
+      border-color: var(--line);
+    }
+
+    .hero-card, .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .hero-card h3,
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .meta-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .meta-list li {
+      padding: 10px 0;
+      border-bottom: 1px solid var(--line);
+      font-size: 0.97rem;
+    }
+
+    .meta-list li:last-child { border-bottom: none; }
+
+    section {
+      padding: 26px 0 10px;
+    }
+
+    .section-title {
+      font-size: 1.9rem;
+      margin-bottom: 10px;
+    }
+
+    .section-intro {
+      color: var(--muted);
+      max-width: 780px;
+      margin-bottom: 22px;
+    }
+
+    .grid-2, .grid-3 {
+      display: grid;
+      gap: 20px;
+    }
+
+    .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .tag {
+      background: #f3f4f6;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-size: 0.9rem;
+      color: #374151;
+    }
+
+    .timeline-item {
+      padding: 16px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .timeline-item:last-child { border-bottom: none; }
+
+    .timeline-item h4 {
+      margin: 0 0 6px;
+      font-size: 1.05rem;
+    }
+
+    .small {
+      color: var(--muted);
+      font-size: 0.94rem;
+      margin-bottom: 8px;
+    }
+
+    footer {
+      margin-top: 50px;
+      padding: 32px 0 48px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 900px) {
+      .hero-grid,
+      .grid-2,
+      .grid-3 {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding-top: 42px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">Farhia Dini</div>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="badge">Lecturer • Researcher • Women’s Economic Empowerment Leader</span>
+          <h1>Farhia Dini</h1>
+          <p class="lead">
+            I am a lecturer and researcher at SIMAD University, with professional interests in development economics,
+            applied econometrics, climate and development, digital transformation, and women’s economic empowerment.
+            I currently serve in leadership roles that connect academic work, student development, innovation, and community impact.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#contact">Get in Touch</a>
+            <a class="btn btn-secondary" href="#research">View Research Areas</a>
+          </div>
+        </div>
+
+        <aside class="hero-card">
+          <h3>Current Roles</h3>
+          <ul class="meta-list">
+            <li><strong>Head of Career Development & Women’s Economic Empowerment</strong><br>SIMAD iLab, SIMAD University</li>
+            <li><strong>Lecturer & Researcher</strong><br>SIMAD University</li>
+            <li><strong>Researcher</strong><br>Erasmus+ READ Project</li>
+            <li><strong>Associate Researcher</strong><br>Institute of Climate and Environment (ICE)</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About</h2>
+        <p class="section-intro">
+          Farhia Dini is a Somali economist, lecturer, and researcher whose work focuses on development economics,
+          economic empowerment, research-informed teaching, and institutional innovation. She is committed to building
+          practical pathways for student success, women-led entrepreneurship, and evidence-based policy engagement in Somalia.
+        </p>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>Academic Interests</h3>
+            <div class="tag-row">
+              <span class="tag">Development Economics</span>
+              <span class="tag">Applied Econometrics</span>
+              <span class="tag">Climate Economics</span>
+              <span class="tag">FDI</span>
+              <span class="tag">Food Security</span>
+              <span class="tag">Digital Transformation</span>
+              <span class="tag">Women’s Economic Empowerment</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Professional Focus</h3>
+            <p>
+              My work bridges higher education, employability, innovation, and economic inclusion. I am especially interested in
+              designing programs that strengthen career readiness, support women and girls, expand access to digital tools, and
+              turn academic knowledge into practical community outcomes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="research">
+      <div class="container">
+        <h2 class="section-title">Research</h2>
+        <p class="section-intro">
+          My research engages with economic development challenges in fragile and emerging contexts, with a growing focus on policy relevance,
+          institutional transformation, and inclusive growth.
+        </p>
+
+        <div class="grid-3">
+          <div class="card">
+            <h3>Core Areas</h3>
+            <p>
+              Applied economics, econometrics, infrastructure and growth, renewable energy, climate economics, food security,
+              and development policy in Sub-Saharan Africa and Somalia.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Current Themes</h3>
+            <p>
+              Women’s economic participation, youth employability, digital transformation, entrepreneurship ecosystems,
+              and evidence-based institutional planning in fragile settings.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Research Goal</h3>
+            <p>
+              To produce high-quality research that informs teaching, supports decision-making, and contributes to development debates
+              relevant to Somalia, Africa, and the wider Global South.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="teaching">
+      <div class="container">
+        <h2 class="section-title">Teaching</h2>
+        <p class="section-intro">
+          I teach with a strong emphasis on clarity, applied examples, and practical skills that help students connect theory to real-world economic and social challenges.
+        </p>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>Courses & Themes</h3>
+            <ul>
+              <li>Development Economics</li>
+              <li>Statistics and Applied Quantitative Skills</li>
+              <li>Econometrics and Empirical Analysis</li>
+              <li>Research Methods and Academic Writing</li>
+              <li>Data Analytics for Undergraduate and Graduate Learners</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Teaching Philosophy</h3>
+            <p>
+              I value student-centered teaching that is practical, motivating, and academically rigorous. My approach encourages critical thinking,
+              evidence use, communication skills, and confidence-building for both classroom success and future careers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="leadership">
+      <div class="container">
+        <h2 class="section-title">Leadership & Service</h2>
+        <p class="section-intro">
+          My leadership work focuses on creating opportunities for students, women, and young professionals through institutional programs, partnerships, and innovation-driven initiatives.
+        </p>
+
+        <div class="card">
+          <div class="timeline-item">
+            <h4>Head of Career Development & Women’s Economic Empowerment</h4>
+            <div class="small">SIMAD iLab, SIMAD University</div>
+            <p>
+              Leading initiatives that promote career readiness, employability, entrepreneurship, and economic inclusion, with special attention to women and youth pathways.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <h4>Head of Instructional & Program Design</h4>
+            <div class="small">SIMAD oLearn</div>
+            <p>
+              Supported digital learning strategy, program design, and institutional efforts to expand access to quality education through online and blended models.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <h4>Research & Institutional Engagement</h4>
+            <div class="small">SIMAD University and partner initiatives</div>
+            <p>
+              Contributing to research, academic development, and collaborative projects that strengthen higher education, innovation systems, and policy engagement.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title">Highlighted Projects & Initiatives</h2>
+        <p class="section-intro">
+          These are example themes you can continue expanding as your website grows.
+        </p>
+
+        <div class="grid-3">
+          <div class="card">
+            <h3>Women-Led Startup Support</h3>
+            <p>
+              Practical training initiatives focused on AI tools, digital branding, business visibility, and productivity support for women-led enterprises.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Graduate Employability Pathways</h3>
+            <p>
+              Career readiness programming for final-year students and recent graduates, including CV support, job search strategy, and internship linkages.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Research & Policy Engagement</h3>
+            <p>
+              Applied work connecting university expertise with development questions in Somalia, especially around inclusion, evidence, and institutional strengthening.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-intro">
+          You can update this section with your professional email, LinkedIn, Google Scholar, ORCID, CV link, and selected publications.
+        </p>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>Contact Details</h3>
+            <p><strong>Email:</strong> your-email@example.com</p>
+            <p><strong>LinkedIn:</strong> add-your-link</p>
+            <p><strong>Google Scholar:</strong> add-your-link</p>
+            <p><strong>ORCID:</strong> add-your-link</p>
+          </div>
+          <div class="card">
+            <h3>Website Notes</h3>
+            <p>
+              Replace all placeholder links with your actual profiles. You can later add a profile photo, publication list,
+              downloadable CV, conference talks, media features, and a dedicated page for programs you lead.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © 2026 Farhia Dini. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>
