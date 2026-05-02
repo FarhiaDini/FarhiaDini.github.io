@@ -1,2 +1,4 @@
 # FarhiaDini.github.io
-Official academic and professional website of Farhia Dini – Lecturer, Researcher, and Head of Career Development &amp; Women’s Economic Empowerment at SIMAD University.
+Economist | Lecturer | Researcher
+Head of Career Development & Women’s Economic Empowerment
+SIMAD Innovation Lab, SIMAD University
