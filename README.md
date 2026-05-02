@@ -1,22 +1,26 @@
-# FarhiaDini.github.io
-Economist | Lecturer | Researcher
-Head of Career Development & Women’s Economic Empowerment
-SIMAD Innovation Lab, SIMAD University
 # Farhia Hassan Mohamed Dini
 
-Lecturer | Researcher | Economist  
-Head of Career Development & Women’s Economic Empowerment  
-SIMAD Innovation Lab, SIMAD University  
+**Economist | Lecturer | Researcher**
+Head of Career Development & Women’s Economic Empowerment
+SIMAD Innovation Lab, SIMAD University
+
+---
+
+## Welcome
 
 Welcome to my official academic and professional website.
 
-This website presents my research, teaching, professional projects, and policy-oriented work in development economics, applied econometrics, youth employment, and women’s economic empowerment.
+I am an economist and researcher specializing in development economics, applied econometrics, and policy-oriented research in Somalia and East Africa. My work focuses on youth employment, women’s economic empowerment, and inclusive economic development.
+
+---
 
 ## Navigation
 
-- [About Me](about.md)
-- [Research](research.md)
-- [Teaching](teaching.md)
-- [Projects](projects.md)
-- [Contact](contact.md)
-- [CV](cv.pdf)
+* 🔹 [About Me](about.md)
+* 🔹 [Research](research.md)
+* 🔹 [Teaching](teaching.md)
+* 🔹 [Projects](projects.md)
+* 🔹 [Contact](contact.md)
+* 🔹 [CV](cv.pdf)
+
+---
